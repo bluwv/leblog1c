@@ -8,7 +8,7 @@
 <body>
 
     <header>
-        <a href="">Le Blog <span>v1.0</span></a>
+        <a href="list.php">Le Blog <span>v1.0</span></a>
 
         <!-- Recherche -->
 
@@ -40,7 +40,7 @@
     <main>
         <section class="dashboard-title">
             <h1>Listing des articles</h1>
-            <a class="button" href="">Add new</a>
+            <a class="button" href="edit.php">Add new</a>
         </section>
 
         <div class="dashboard-stats">
@@ -86,7 +86,7 @@
                 <tbody>
                     <tr>
                         <td>[ ]</td>
-                        <td>Lorem ipsum</td>
+                        <td><a href="edit.php">Lorem ipsum</a></td>
                         <td>Catégorie</td>
                         <td>Adrien</td>
                         <td>01/01/2025</td>
@@ -96,7 +96,7 @@
                     </tr>
                     <tr>
                         <td>[ ]</td>
-                        <td>Lorem ipsum</td>
+                        <td><a href="edit.php">Lorem ipsum</a></td>
                         <td>Catégorie</td>
                         <td>Adrien</td>
                         <td>01/01/2025</td>

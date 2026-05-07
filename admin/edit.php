@@ -8,7 +8,7 @@
 <body>
 
     <header>
-        <a href="">Le Blog <span>v1.0</span></a>
+        <a href="list.php">Le Blog <span>v1.0</span></a>
 
         <!-- Recherche -->
 
@@ -40,10 +40,10 @@
     <main>
         <section class="dashboard-title">
             <h1>Ajouter un article</h1>
-            <a class="button" href="">Add new</a>
+            <a class="button" href="edit.php">Add new</a>
         </section>
 
-        <form method="POST" action="" novalidate>
+        <form method="POST" action="edit.php" novalidate>
             <div>
                 <label for="title">Titre</label>
                 <input id="title" type="text" name="title" placeholder="Lorem ipsum" required>

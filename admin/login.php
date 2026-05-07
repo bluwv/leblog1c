@@ -8,10 +8,10 @@
 <body>
 
     <main>
-        <h1>Le Blog</h1>
+        <h1><a href="../public/index.php">Le Blog</a></h1>
         <p>Don’t have an account yet? <a href="">Sign up</a></p>
 
-        <form method="POST" action="" novalidate autocomplete="off">
+        <form method="POST" action="list.php" novalidate autocomplete="off">
 
             <label for="email">email address</label>
             <input id="email" type="email" name="email" placeholder="name@gmail.com" autocomplete="username" required>
@@ -27,7 +27,7 @@
             <a href="">I lost my password</a>
         </form>
 
-        <a href="">Revenir au blog</a>
+        <a href="../public/index.php">Revenir au blog</a>
     </main>
 
 </body>

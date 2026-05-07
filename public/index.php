@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
 
@@ -23,7 +24,7 @@
         ?>
     </section>
 
-    <section>
+    <section class="posts--all">
         <h2>All blog posts</h2>
 
         <ul>
@@ -44,11 +45,13 @@
             </li>
         </ul>
 
-        <?php
-            for ( $i = 0; $i < 5; $i++ ) {
-                include 'inc/card-article.php';
-            }
-        ?>
+        <div>
+            <?php
+                for ( $i = 0; $i < 5; $i++ ) {
+                    include 'inc/card-article.php';
+                }
+            ?>
+        </div>
     </section>
 
 </body>
