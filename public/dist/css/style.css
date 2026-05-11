@@ -10,21 +10,7 @@
 @import "04-elements/button.css";
 @import "04-elements/form.css";
 
-@import "06-components/login.css";
+@import "06-layouts/home.css";
+@import "06-layouts/login.css";
 
 /* @layer theme, elements, objects, components; */
-
-.posts--all {
-    margin: 0 auto;
-    max-width: 1200px;
-
-    & > div {
-        display: grid;
-        gap: 40px;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    }
-
-    article {
-        background: yellow;
-    }
-}

@@ -6,12 +6,13 @@
         display: flex;
         flex-direction: column;
         place-content: center;
+        padding: min(2rem, 8vw);
         min-height: 100vh;
     }
 
     .container {
         margin: 0 auto;
-        padding: 4rem 5.2rem;
+        padding: 4rem clamp(2rem, 4.5031vw + .9446rem, 5.2rem);
         width: 100%;
         max-width: 50.4rem;
         background: var(--color-grey-008);
@@ -86,7 +87,7 @@
             display: inline-block;
             width: 1.2rem;
             height: 1.2rem;
-            background: url('../icons/arrow-left.svg') 50% 50% no-repeat;
+            background: url('../../icons/arrow-left.svg') 50% 50% no-repeat;
             filter: invert(1);
             background-size: contain;
         }
