@@ -1,15 +1,85 @@
+[data-page="home"] {
+    & > * {
+        padding-inline: max(2rem, 8vw);
+    }
+}
+
+.hero {
+    padding-block: 6rem 4rem;
+    background: #D9E5F2;
+
+    .title {
+        font-family: var(--font-secondary);
+        font-size: 8rem;
+    }
+
+    p {
+        max-width: 65ch;
+        font-size: 1.8rem;
+    }
+}
+
+.posts--lastest {
+    margin-block: 6rem 4rem;
+
+    & > div {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto) 1fr;
+
+        @media screen and (max-width: 740px) {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-rows: auto;
+        }
+    }
+
+    .card:first-child {
+        @media screen and (max-width: 1020px) {
+            grid-column: 1 / -1;
+            grid-row: auto;
+        }
+
+        @media screen and (min-width: 1021px) {
+            grid-column: auto;
+            grid-row: span 4;
+        }
+    }
+
+    .card:not(:first-child) {
+        @media screen and (min-width: 1021px) {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .card-thumbnail {
+            display: block;
+            margin-bottom: 0;
+
+            img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+            }
+        }
+
+        .title {
+            font-size: 1.8rem;
+        }
+
+        p {
+            display: none;
+        }
+    }
+}
 
 .posts--all {
-    margin: 0 auto;
-    max-width: 1200px;
+    margin-block: 6rem 4rem;
 
     & > div {
         display: grid;
         gap: 40px;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    }
-
-    article {
-        background: yellow;
     }
 }
