@@ -1,0 +1,94 @@
+[data-page="login"] {
+    color: var(--color-white);
+    background: var(--color-black);
+
+    main {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 4rem 5.2rem;
+        width: 100%;
+        max-width: 50.4rem;
+        background: var(--color-grey-008);
+        border-radius: .8rem;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        font-family: var(--font-secondary);
+        font-weight: normal;
+        font-size: 4.8rem;
+        color: var(--color-white);
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    p {
+        opacity: .8;
+    }
+
+    p a {
+        color: var(--color-blue);
+        text-decoration: underline;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+        margin-top: 3.2rem;
+    }
+
+    .form-row:not(.form-row--checkbox) {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+
+        label {
+            margin-inline: 2.4rem;
+        }
+    }
+
+    .form-row--checkbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .8rem;
+    }
+
+    .button {
+        width: 100%;
+
+        & + a {
+            display: inline-block;
+            margin: 2rem auto 0;
+            font-size: 1.2rem;
+            text-decoration: underline;
+        }
+    }
+
+    main > a:not([class]) {
+        display: inline-flex;
+        gap: 1.4rem;
+        align-items: center;
+        margin: 4rem auto 0;
+        font-size: 1.2rem;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 1.2rem;
+            height: 1.2rem;
+            background: url('../icons/arrow-left.svg') 50% 50% no-repeat;
+            filter: invert(1);
+            background-size: contain;
+        }
+    }
+}

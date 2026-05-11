@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Rakkas";
+  src:
+    local("Rakkas"),
+    url("../fonts/Rakkas-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    local("Inter"),
+    url("../fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2");
+}
+
+:root {
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Rakkas", serif;
+}
